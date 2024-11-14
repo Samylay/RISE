@@ -1,19 +1,13 @@
-// eslint-disable-next-line @typescript-eslint/no-require-imports
-const withPWA = require("@ducanh2912/next-pwa").default({
+/** @type {import('next').NextConfig} */
+import withPWAInit from "@ducanh2912/next-pwa";
+
+const withPWA = withPWAInit({
   dest: "public",
-  cacheOnFrontEndNav: true,
-  aggressiveFrontEndNavCaching: true,
-  reloadOnOnline: true,
-  swcMinify: true,
-  disable: process.env.NODE_ENV === "development",
-  workboxOptions: {
-    disableDevLogs: true,
+  fallbacks: {
+    document: "/~offline",
   },
 });
 
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  // your other next config
-};
-
-module.exports = withPWA(nextConfig);
+export default withPWA({
+  // Your Next.js config
+});
