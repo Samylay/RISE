@@ -108,6 +108,7 @@ interface LevelSystem {
    - Coding
    - Learning
    - Writing
+   - Studying
    
 2. **Metric-Based** (Future)
    - Steps
@@ -228,6 +229,7 @@ interface UserPreferences {
     theme: 'light' | 'dark';
     compactMode: boolean;
     animations: boolean;
+    color:'green' | 'orange' | 'yellow'; //etc
   };
 }
 ```
