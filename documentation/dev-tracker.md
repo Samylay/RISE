@@ -4,8 +4,6 @@
 ### Core Features Checklist
 | Feature | Status | Priority | Difficulty | Dependencies |
 |---------|--------|----------|------------|--------------|
-| Basic UI Framework | 🟡 Todo | P0 | Medium | None |
-| Local Storage Setup | 🟡 Todo | P0 | Easy | None |
 | Activity Timer | 🟡 Todo | P0 | Medium | Basic UI |
 | Activity Planning | 🟡 Todo | P0 | Medium | Storage |
 | Daily Reset Logic | 🟡 Todo | P0 | Easy | Storage |
