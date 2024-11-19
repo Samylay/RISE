@@ -63,7 +63,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <ClerkProvider afterSignOutUrl="/">
+      <ClerkProvider
+        publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}
+        afterSignOutUrl="/"
+      >
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
