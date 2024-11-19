@@ -2,6 +2,14 @@
 
 ## 🌟 Integration Features
 
+### AI Integration
+
+#### User Input Organization
+- Organizes user inputs into bullet points.
+- Provides prompts for users to take pictures of documents (e.g., curriculum).
+- Converts captured data into a usable data object for the UI.
+
+
 ### Garmin Watch Integration
 ```typescript
 interface GarminIntegration {
