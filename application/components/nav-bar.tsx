@@ -50,7 +50,7 @@ export default function NavBar() {
                 </Button>
               </SignInButton>
             </SignedOut>
-            <SignedIn >
+            <SignedIn>
               <UserButton />
             </SignedIn>
           </div>
@@ -85,6 +85,19 @@ export default function NavBar() {
                     </Link>
                   ))}
                   <div className="mt-6 px-3"></div>
+                  <SignedOut>
+                    <SignInButton
+                      signUpForceRedirectUrl="/"
+                      forceRedirectUrl="/"
+                    >
+                      <Button className="text-white px-6 py-3 rounded-lg font-medium hover:shadow-lg transition-shadow duration-200">
+                        Sign in
+                      </Button>
+                    </SignInButton>
+                  </SignedOut>
+                  <SignedIn>
+                    <UserButton />
+                  </SignedIn>
                 </div>
               </SheetContent>
             </Sheet>
